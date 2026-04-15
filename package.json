@@ -1,0 +1,57 @@
+{
+  "name": "@inariwatch/capture-replay",
+  "version": "0.2.0",
+  "description": "Session replay integration for @inariwatch/capture — DOM + network + console + Web Vitals capture with PII masking",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "tsc"
+  },
+  "keywords": [
+    "session-replay",
+    "rrweb",
+    "inariwatch",
+    "monitoring",
+    "pii-masking",
+    "web-vitals",
+    "rage-clicks",
+    "dead-clicks"
+  ],
+  "author": "Jesus Bernal <info@jesusbr.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orbita-pos/inariwatch-capture-replay.git"
+  },
+  "homepage": "https://inariwatch.com/docs/session-replay",
+  "bugs": {
+    "url": "https://github.com/orbita-pos/inariwatch-capture-replay/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "rrweb": "2.0.0-alpha.20"
+  },
+  "peerDependencies": {
+    "@inariwatch/capture": "^0.8.0"
+  },
+  "devDependencies": {
+    "@inariwatch/capture": "^0.8.0",
+    "@types/node": "^25.5.0",
+    "typescript": "^5.5.0"
+  }
+}
